@@ -6,6 +6,15 @@ This turns the original `GAT_Based.ipynb` notebook (see `Mini_Project_Report.pdf
 for the full write-up) into a runnable web app, per the report's own
 "Future Work: Deploy as web application."
 
+## Live demo
+
+`demo/index.html` is a standalone, self-contained page ("Attention Atlas"):
+the trained embeddings and dataset are baked into the file and every
+recommendation is computed client-side in JavaScript, so it needs no server
+and no build step — open the file directly in a browser. It ports the same
+recommendation logic as `backend/model.py` (cosine similarity + type-frequency
+boost + explanations), plus a place explorer and a force-directed graph view.
+
 ## How it works
 
 - **Dataset**: 5,000 synthetic places (waterfall/temple/beach/monument/hill/lake,
