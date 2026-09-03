@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+backend/venv/
+backend/.venv/
+*.log
+
+# Cached model artifacts (regenerated on first backend run)
+backend/data/*.csv
+backend/data/*.npy
+backend/data/*.json
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+
+# Editors / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Claude Code harness internals
+.claude/

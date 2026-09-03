@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+torch
+torch-geometric
+pandas
+numpy
+scikit-learn
